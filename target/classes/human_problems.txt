@@ -1,0 +1,5 @@
+1,raceala
+2,durere de cap
+3,gripa
+4,insomnie
+5,sinuzita

@@ -1,0 +1,6 @@
+1,Fluffy,3
+2,Puffy,2
+3,Dodo,2
+4,Mumbo,3
+5,Cola,1
+6,Pepsi,1

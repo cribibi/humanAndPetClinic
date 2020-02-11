@@ -1,0 +1,6 @@
+1,radu,3
+2,mihai,5
+3,diana,2
+4,liviu,3
+5,relu,1
+6,vincentiu,4
