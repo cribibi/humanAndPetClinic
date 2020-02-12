@@ -11,7 +11,7 @@ public class ClinicRunner {
         HumanPatient pacient3 = new HumanPatient(8, "Mihaita", "dureri");
         System.out.println("========================");
 
-        ClinicReader clinicReader = new ClinicFileReader();
+        ClinicReader clinicReader = new ClinicFileReader(PatientTypes.HUMAN);
 
         List<AbstractPatient> patients = clinicReader.readPatients();
         System.out.println("List of human patients: "+ patients);
@@ -21,13 +21,16 @@ public class ClinicRunner {
         System.out.println("List of human problems: " + problems);
         System.out.println("========================");
 
-        List<AbstractPatient> petPatients = clinicReader.readPetPatients();
-        System.out.println("List of pet patients: "+ petPatients);
+        ClinicReader clinicReader2 = new ClinicFileReader(PatientTypes.PET);
+
+        List<AbstractPatient> petPatients = clinicReader.readPatients();
+        System.out.println("List of human patients: "+ petPatients);
         System.out.println("========================");
 
-        Map<Integer, String> petProblems = clinicReader.readPetProblems();
-        System.out.println("List of pet problems: " + petProblems);
+        Map<Integer, String> petProblems = clinicReader.readProblems();
+        System.out.println("List of human problems: " + petProblems);
         System.out.println("========================");
+
 
         AbstractClinic clinic = new HumanClinic();
         clinic.addBulkPatients(patients);
@@ -56,13 +59,13 @@ public class ClinicRunner {
         System.out.println();
 
         clinic.removePatientByPatientObject(patients.get(3));
+        System.out.println("Am sters pacientul e pe pozitia 3");
         clinic.listPatients();
-        System.out.println("========================");
         System.out.println();
 
         AbstractClinic clinic2 = new PetClinic();
         clinic2.addBulkPatients(petPatients);
-        System.out.println("lista de pet pacienti din fisier:");
+        System.out.println("lista de pet patients din fisier:");
         clinic2.listPatients();
         System.out.println();
     }

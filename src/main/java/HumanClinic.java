@@ -6,7 +6,7 @@ public class HumanClinic extends AbstractClinic {
 
     Map<Integer, AbstractPatient> currentPatients = new HashMap<>();
     //aveam nullpoint exception deoarece mapu-ul meu era null, trebuia sa instantiez Map-ul
-
+    //trebuie instantiat ca HashMap, nu ca Map
     public void addPatient(AbstractPatient patient) {
         if (patient == null) throw new IllegalArgumentException("that patient is null");
         else if (!currentPatients.containsKey(patient.patientID)) {
