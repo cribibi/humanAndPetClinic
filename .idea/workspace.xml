@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475ad47b-2097-40e9-bad5-38924666f053" name="Default Changelist" comment="" />
+    <list default="true" id="475ad47b-2097-40e9-bad5-38924666f053" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractClinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClinicFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClinicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClinicRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanClinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PetPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PetPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClinicFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClinicFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClinicRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClinicRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HumanClinic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HumanClinic.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,6 +41,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1Xcpgtbve1Z1kTV0kKxDZ7fekJS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -63,5 +83,16 @@
       <updated>1581355351704</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

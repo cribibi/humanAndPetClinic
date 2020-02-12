@@ -11,31 +11,6 @@ import java.util.Map;
 
 public class ClinicFileReader implements ClinicReader {
 
-    public List<AbstractPatient> readPatients() throws IOException, URISyntaxException{
-        List<String> strings = readFileByName("human_patients.txt");
-        ArrayList<AbstractPatient> patients =new ArrayList<>();
-
-        for (int i = 0; i <strings.size() ; i++) {
-            String[] fields = strings.get(i).split(",");
-            HumanPatient human=new HumanPatient(Integer.parseInt(fields[0]), fields[1], fields[2]);
-            patients.add(human);
-            System.out.println("Human patient "+ fields[1]+"suffering from "+fields[2] +" added. Get well "+ fields[1]+"!");
-        }
-        return patients;
-    }
-
-
-    public Map<Integer, String> readProblems() throws IOException, URISyntaxException {
-        List<String> strings = readFileByName("human_problems.txt");
-        Map<Integer, String> problems =new HashMap<>();
-        for (int i = 0; i <strings.size() ; i++) {
-            String[] fields = strings.get(i).split(",");
-            problems.put(Integer.parseInt(fields[0]), fields[1]);
-            System.out.println("Human problem with ID: "+ fields[0]+", called "+fields[1] +" added.");
-        }
-        return problems;
-    }
-
     private List<String> readFileByName(String fileName) throws URISyntaxException, IOException {
         URI file = ClassLoader.getSystemResource(fileName).toURI();
         Path pathOfFile = Paths.get(file);
@@ -43,6 +18,53 @@ public class ClinicFileReader implements ClinicReader {
         return strings;
     }
 
+    public List<AbstractPatient> readPatients() throws IOException, URISyntaxException {
+        ArrayList<AbstractPatient> humanPatients = new ArrayList<>();
+        List<String> strings = readFileByName("human_patients.txt");
+        Map<Integer, String> problemDescriptionMap = readProblems();
 
+        for (int i = 0; i < strings.size(); i++) {
+            String[] fields = strings.get(i).split(",");
+            HumanPatient patient = new HumanPatient(Integer.parseInt(fields[0]), fields[1],
+                    problemDescriptionMap.get(Integer.parseInt(fields[2])));
+            humanPatients.add(patient);
+        }
+        return humanPatients;
+    }
 
+    public Map<Integer, String> readProblems() throws IOException, URISyntaxException {
+        Map<Integer, String> humanProblems = new HashMap<>();
+        List<String> strings = readFileByName("human_problems.txt");
+
+        for (int i = 0; i < strings.size(); i++) {
+            String[] fields = strings.get(i).split(",");
+            humanProblems.put(Integer.parseInt(fields[0]), fields[1]);
+        }
+        return humanProblems;
+    }
+
+    public List<AbstractPatient> readPetPatients() throws IOException, URISyntaxException {
+        ArrayList<AbstractPatient> petPatients = new ArrayList<>();
+        List<String> strings = readFileByName("pet_patients.txt");
+        Map<Integer, String> problemDescriptionMap = readPetProblems();
+
+        for (int i = 0; i < strings.size(); i++) {
+            String[] fields = strings.get(i).split(",");
+            PetPatient pet = new PetPatient(Integer.parseInt(fields[0]), fields[1],
+                    problemDescriptionMap.get(Integer.parseInt(fields[2])));
+            petPatients.add(pet);
+        }
+        return petPatients;
+    }
+
+    public Map<Integer, String> readPetProblems() throws IOException, URISyntaxException {
+        Map<Integer, String> petProblems = new HashMap<>();
+        List<String> strings = readFileByName("pet_problems.txt");
+
+        for (int i = 0; i < strings.size(); i++) {
+            String[] fields = strings.get(i).split(",");
+            petProblems.put(Integer.parseInt(fields[0]), fields[1]);
+        }
+        return petProblems;
+    }
 }
