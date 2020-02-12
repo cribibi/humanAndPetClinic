@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475ad47b-2097-40e9-bad5-38924666f053" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="475ad47b-2097-40e9-bad5-38924666f053" name="Default Changelist" comment="commit from 12feb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractClinic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClinicFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClinicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ClinicRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanClinic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanPatient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PetPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PetPatient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClinicFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClinicFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PetClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PetClinic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ClinicRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClinicRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HumanClinic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HumanClinic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PetClinic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PetClinic.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,5 +87,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit from 12feb" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit from 12feb" />
   </component>
 </project>

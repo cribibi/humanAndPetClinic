@@ -31,36 +31,39 @@ public class ClinicRunner {
 
         AbstractClinic clinic = new HumanClinic();
         clinic.addBulkPatients(patients);
+        System.out.println("lista de pacienti din fisier: ");
         clinic.listPatients();
-        System.out.println("lista de pacienti din fisier este printata deasupra");
         System.out.println();
 
         clinic.addPatient(pacient2);
-        clinic.listPatients();
         System.out.println("Am adaugat pacientul2");
+        clinic.listPatients();
         System.out.println();
 
         clinic.addPatient(pacient3);
-        clinic.listPatients();
         System.out.println("Am adaugat pacientul3 dar avea acelasi ID cu pacientul2 si a fost ignorat");
+        clinic.listPatients();
         System.out.println();
 
         clinic.removePatientByPatientId(1);
-        clinic.listPatients();
         System.out.println("Am sters pacientul cu ID-ul 1");
+        clinic.listPatients();
         System.out.println();
-
 
         clinic.removePatientByPatientObject(pacient3);
-        clinic.listPatients();
         System.out.println("Am sters pacientul3");
+        clinic.listPatients();
         System.out.println();
-
 
         clinic.removePatientByPatientObject(patients.get(3));
         clinic.listPatients();
         System.out.println("========================");
         System.out.println();
 
+        AbstractClinic clinic2 = new PetClinic();
+        clinic2.addBulkPatients(petPatients);
+        System.out.println("lista de pet pacienti din fisier:");
+        clinic2.listPatients();
+        System.out.println();
     }
 }
