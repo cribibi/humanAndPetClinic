@@ -23,12 +23,12 @@ public class ClinicRunner {
 
         ClinicReader clinicReader2 = new ClinicFileReader(PatientTypes.PET);
 
-        List<AbstractPatient> petPatients = clinicReader.readPatients();
-        System.out.println("List of human patients: "+ petPatients);
+        List<AbstractPatient> petPatients = clinicReader2.readPatients();
+        System.out.println("List of pet patients: "+ petPatients);
         System.out.println("========================");
 
-        Map<Integer, String> petProblems = clinicReader.readProblems();
-        System.out.println("List of human problems: " + petProblems);
+        Map<Integer, String> petProblems = clinicReader2.readProblems();
+        System.out.println("List of pet problems: " + petProblems);
         System.out.println("========================");
 
 

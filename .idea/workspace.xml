@@ -3,15 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="475ad47b-2097-40e9-bad5-38924666f053" name="Default Changelist" comment="commit from 12feb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractPatient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ClinicFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClinicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ClinicRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClinicRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HumanClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanClinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanPatient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PatientTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PatientTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PetPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PetPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AbstractPatient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AbstractPatient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ClinicFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClinicFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClinicReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClinicReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ClinicRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClinicRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HumanPatient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HumanPatient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PatientTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PatientTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PetPatient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PetPatient.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +90,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -96,5 +101,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit from 12feb" />
     <option name="LAST_COMMIT_MESSAGE" value="commit from 12feb" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ClinicRunner.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

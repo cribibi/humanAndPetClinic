@@ -11,8 +11,8 @@ import java.util.Map;
 
 public enum PatientTypes {
 
-    HUMAN("human_patient.txt", "human_problems.txt"),
-    PET("pet_patient.txt", "pet_problems.txt");
+    HUMAN("human_patients.txt", "human_problems.txt"),
+    PET("pet_patients.txt", "pet_problems.txt");
 
     private final String patientsFiles;
     private final String problemsFiles;

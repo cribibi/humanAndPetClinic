@@ -14,7 +14,7 @@ public class ClinicFileReader implements ClinicReader {
     private final PatientTypes types;
 
     public ClinicFileReader(PatientTypes types) {
-        this.types=types;
+        this.types = types;
     }
 
     private List<String> readFileByName(String fileName) throws URISyntaxException, IOException {
@@ -29,13 +29,24 @@ public class ClinicFileReader implements ClinicReader {
         List<String> strings = readFileByName(types.getPatientsFiles());
         Map<Integer, String> problemDescriptionMap = readProblems();
 
-        for (int i = 0; i < strings.size(); i++) {
-            String[] fields = strings.get(i).split(",");
-            HumanPatient patient = new HumanPatient(Integer.parseInt(fields[0]), fields[1],
-                    problemDescriptionMap.get(Integer.parseInt(fields[2])));
-            patients.add(patient);
+        if (types.equals(PatientTypes.HUMAN)) {
+            for (int i = 0; i < strings.size(); i++) {
+                String[] fields = strings.get(i).split(",");
+
+                AbstractPatient patient = new HumanPatient(Integer.parseInt(fields[0]), fields[1],
+                        problemDescriptionMap.get(Integer.parseInt(fields[2])));
+                patients.add(patient);
+            }
+            return patients;
+        } else {
+            for (int i = 0; i < strings.size(); i++) {
+                String[] fields = strings.get(i).split(",");
+                AbstractPatient patient = new PetPatient(Integer.parseInt(fields[0]), fields[1],
+                        problemDescriptionMap.get(Integer.parseInt(fields[2])));
+                patients.add(patient);
+            }
+            return patients;
         }
-        return patients;
     }
 
     public Map<Integer, String> readProblems() throws IOException, URISyntaxException {

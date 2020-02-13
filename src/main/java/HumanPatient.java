@@ -9,7 +9,7 @@ public class HumanPatient extends AbstractPatient {
 
     public HumanPatient(int patientID, String patientName, String problemName) {
         super(patientID, patientName, problemName);
-        System.out.println("Human patient "+patientName+", suffering from "+ problemName+", has been added. Get well dear "+patientName+"!");
+        System.out.println("HUMAN patient "+patientName+", suffering from "+ problemName+", has been added. Get well dear "+patientName+"!");
     }
 
     @Override

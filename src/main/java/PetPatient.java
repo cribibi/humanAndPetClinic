@@ -7,7 +7,7 @@ public class PetPatient extends AbstractPatient {
 
     public PetPatient(int patientID, String patientName, String problemName) {
         super(patientID, patientName, problemName);
-        System.out.println("Pet patient "+patientName+", suffering from "+
+        System.out.println("PET patient "+patientName+", suffering from "+
                 problemName+", has been added. Get well dear "+patientName+"!");
     }
 
