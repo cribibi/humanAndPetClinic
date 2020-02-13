@@ -21,7 +21,6 @@ public abstract class AbstractPatient {
         this.patientName = patientName;
         this.problemName = problemName;
         //System.out.println("ABSTRACT PATIENT "+patientName+", suffering from "+ problemName+", has been added. Get well dear "+patientName+"!");
-
     }
 
     public String getProblemName() {
