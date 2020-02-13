@@ -85,6 +85,7 @@ public class ClinicRunner {
 
         System.out.println("\nNoua lista de probleme la animale este:");
         clinic2.listProblems();
+        System.out.println("gggfffgf");
 
     }
 }

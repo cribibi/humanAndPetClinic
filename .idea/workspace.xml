@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475ad47b-2097-40e9-bad5-38924666f053" name="Default Changelist" comment="commit from 12feb">
-      <change afterPath="$PROJECT_DIR$/Clinic Project.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="475ad47b-2097-40e9-bad5-38924666f053" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +69,14 @@
       <option name="presentableId" value="Default" />
       <updated>1581355351704</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit cerinte noi">
+      <created>1581573489130</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581573489130</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,7 +94,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit from 12feb" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit from 12feb" />
+    <MESSAGE value="commit cerinte noi" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit cerinte noi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
