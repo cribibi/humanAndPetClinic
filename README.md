@@ -117,12 +117,7 @@ Add code in the constructor of HumanPatient so that when a new HumanPatient obje
 
 	Notice that the indented text is the value received as a parameter. 
 	The HumanPatient class must have a toString method. You can generate this from intellij. Use getters to retrieve the name of the patient. Or maybe make sure that the fields in the parent class are protected and use them from there.
-
 	
-
-
-
-
 Checkpoint 6. Populating patients from file.
 	Now that we’re able to create objects of type humanPatient we can continue to write code in the ClinicFileReader class.
 	Our method readPatients will now need to use the List<String> that we read from the 
